@@ -7,16 +7,22 @@ exports.winnerWinnerChickenDinner = function (u1n, u1m, u2n, u2m) {
   if (u1m > u2m) {
     //user 1 wins!
     winner = u1n;
+    loser = u2n;
   }
   else if (u1m < u2m) {
     //user 2 wins!
     winner = u2n;
+    loser = u1n;
   }
   else {
     // both are losers!
     winner = "";
+    loser = "";
   }
-  return winner;
+  return {
+      winner: winner,
+      loser: loser
+  };  
 };
 
 score = function (move) {

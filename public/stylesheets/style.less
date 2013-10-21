@@ -1,0 +1,88 @@
+@import "mixins.less";
+
+/* var */
+@primary-font-color: #333;
+/* /var */
+
+/* general */
+body {
+  color: @primary-font-color;
+  font-size: 16px;
+  font-family: 'Ariel', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+}
+
+a {
+  color: @primary-font-color;
+
+  &:visited {
+    color: @primary-font-color;
+  }
+  &:hover {
+    color: @primary-font-color;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: @primary-font-color;
+  }
+  &:focus{
+    color: @primary-font-color;
+    outline: none;
+  }
+
+  img {
+    border: none;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, li, form {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+/* /general */
+
+#header {
+
+}
+/* /header */
+
+#login-page {
+  
+}
+
+#footer {
+
+}
+/* /footer */
+
+@media (min-width: 980px) and (max-width: 1199px) { 
+}
+/********** small desktop **********/
+
+@media (min-width: 768px) and (max-width: 979px) {
+}
+/********** landscape tablet **********/
+
+@media (max-width: 767px){
+#login-page {
+  .sign-in-container {
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+}
+/********** portrait tablet **********/
+
+@media (max-width: 480px){
+}
+/********** mobile **********/

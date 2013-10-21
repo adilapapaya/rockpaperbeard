@@ -94,7 +94,57 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, form {
 
     .description {
       text-align: center;
-      color: #fff;
+      color: #fff;  
+    }
+  }
+}
+
+#play-page {
+  .title {
+    font-size: 20px; 
+    font-weight: 800;
+  }
+
+  .player-container {
+    overflow: hidden;
+    padding-top: 20px;
+
+    &.first {
+      padding-top: 0;
+    }
+
+    .profile-container {
+      .title {
+        font-size: 18px;
+      }
+    }
+
+    .move-container {
+      .image {
+        width: 50%;
+      }
+    }
+  }
+
+  .move-container {
+    overflow: hidden;
+    padding-top: 10px;
+
+    .image {
+      width: 100%;
+      opacity: .5;
+
+      &.selected {
+        opacity: 1;
+      }
+    }
+  }
+
+  .actions {
+    margin-top: 20px;
+
+    .submit-btn {
+      color: #fff;  
     }
   }
 }

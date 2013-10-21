@@ -50,9 +50,9 @@ app.post('/login',
                                    })
 );
 
-//game dashbard..
-app.post('dashboard', function(req, res) {
-    res.send('dashboard');
+//game dashboard..
+app.get('/dashboard', function(req, res) {
+    res.render('loading');
 });
 
 

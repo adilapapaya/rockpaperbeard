@@ -5,6 +5,8 @@
   "dependencies": {
     "express": "~3.4.1",
     "mongoose": "~3.6.20",
-    "ejs": "~0.8.4"
+    "ejs": "~0.8.4",
+    "passport-local": "~0.1.6",
+    "passport": "~0.1.17"
   }
 }

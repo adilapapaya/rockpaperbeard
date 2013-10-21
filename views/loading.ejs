@@ -18,7 +18,7 @@
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png">
   <link rel="shortcut icon" href="favicon.png">
 
-<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
 <script type="text/javascript">
 var less = {
   env: "development",
@@ -27,35 +27,24 @@ var less = {
 }
 </script>
 <link rel="stylesheet/less" href="stylesheets/style.less">
-<script src="javascripts/less-1.4.1.min.js"></script>
-<script src="javascripts/modernizr-2.6.2.min.js"></script>
+<script src="/javascripts/less-1.4.1.min.js"></script>
+<script src="/javascripts/modernizr-2.6.2.min.js"></script>
 <script type="text/javascript">
 if(!Modernizr.touch){
   less.watch();
 }
 </script>
 </head>
-<body> 
+<body class="body"> 
 
 <!-- content -->
-<div id="login-page">
+<div id="loading-page">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <div class="sign-in-container">
-          <img class="image" src="holder.js/200x200" />
-          <form role="form" method="post" action="/login">
-            <div class="form-group">
-              <label for="username">Username</label>
-              <input type="text" class="form-control" name="username" id="username" placeholder="Username">
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" name="password" id="password" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-default btn-block btn-primary">Log In</button>
-            <a href="/signup" class="btn btn-default btn-block">Register</a>
-          </form>
+        <div class="loading-container">
+          <img class="image" src="/images/loading.gif" />
+          <h2 class="description">Searching for players...</h2>
         </div>
       </div>
     </div>

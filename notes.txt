@@ -1,0 +1,35 @@
+Notes
+
+Features:
+	•	Avatar, user login + signup.
+	•	Display winning via beard growth (color?).
+	•	API.
+	•	Store wins in MongoDB.
+
+V1:
+	•	Wireframe: initial UI/UX.
+	•	Needed data fields.
+	•	Logic for the game (win/loss).
+	•	Define API.
+	•	Mobile first.
+
+V2:
+	•	CSS beard.
+	•	User login + signup.
+	•	Desktop version.
+	•	Win/Loss authentication in real time.
+
+API:
+- /users 
+		/id 
+			- name 
+			- results
+// by default: it returns active users.
+
+- /result (POST) 
+	u1: id, move 
+	u2: id, move
+// server responds with win OR loss for each user.
+
+MongoDB: * Store active users. * Store user wins/losses.
+* User structure: User: id, results.

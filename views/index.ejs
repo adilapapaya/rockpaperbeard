@@ -1,24 +1,82 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Latest Movie</title>
-    <style>
-      body {
-        text-align: center;
-        font-size: 4em;
-      }
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Rock Paper Beard</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      h1, h3 {
-        margin: 0;
-      }
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" href="favicon.png">
 
-      h1 small {
-        font-size: 0.5em;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Hello from view</h1>
-  </body>
+<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+<script type="text/javascript">
+var less = {
+  env: "development",
+  poll: 500,
+  dumpLineNumbers: "comments"
+}
+</script>
+<link rel="stylesheet/less" href="stylesheets/style.less">
+<script src="javascripts/less-1.4.1.min.js"></script>
+<script src="javascripts/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript">
+if(!Modernizr.touch){
+  less.watch();
+}
+</script>
+</head>
+<body> 
+
+<!-- content -->
+<div id="login-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="sign-in-container">
+          <img class="image" src="holder.js/200x200" />
+          <form role="form">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default btn-block btn-primary">Log In</button>
+            <button type="submit" class="btn btn-default btn-block">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /content -->
+  
+<script src="/javascripts/jquery-2.0.3.min.js"></script>
+<script src="/javascripts/detectmobilebrowser.js"></script>
+<script src="/javascripts/bootstrap.min.js"></script>
+<script src="/javascripts/holder.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+/*
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
+*/
+</script>
+<!-- /Google Analytics -->
+</body>
 </html>

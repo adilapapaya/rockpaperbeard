@@ -9,3 +9,9 @@ app.get('/', function(req, res) {
 });
 
 app.listen(2013);
+
+var logic = require('./logic.js');
+
+// Example Calls
+// console.log(logic.winnerWinnerChickenDinner("Player One", "ROCK", "Player Two", "PAPER"));
+// console.log(logic.winnerWinnerChickenDinner("Player One", "scissors", "Player Two", "PAPER"));

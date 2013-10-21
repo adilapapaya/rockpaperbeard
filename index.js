@@ -34,9 +34,25 @@ passport.use(new LocalStrategy(
         return done(null, user);
     }
     else {
-        console.log('wrong login');
+        return done(null, false, { message: 'Incorrect password.' });
     }
 }));
+
+//signup form
+app.get('/signup', function(req, res) {
+  res.render('signup');
+});
+
+//signup submission
+app.post('/signupSubmit', function(req, res) {
+  //get post paramters
+  var userData = req.body;
+  
+  //@TODO save userData in the DB
+    
+  res.render('index');
+});
+
 
 //login form
 app.get('/loginForm', function(req, res) {
